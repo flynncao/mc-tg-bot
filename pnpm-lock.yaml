@@ -38,6 +38,9 @@ dependencies:
   grammy:
     specifier: ^1.19.2
     version: 1.19.2
+  minestat:
+    specifier: ^2.0.0
+    version: 2.0.0
   mongodb:
     specifier: ^6.3.0
     version: 6.3.0
@@ -2938,6 +2941,10 @@ packages:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
     dev: true
+
+  /minestat@2.0.0:
+    resolution: {integrity: sha512-8hi7KeC8yPL6Dv8QKO4fLF3EMUfpkI0FarmJJdN/NqalvJC9r/ZkmJG6gw2VizyolXzg7gXOzBZ24Z/aSsZiig==}
+    dev: false
 
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}

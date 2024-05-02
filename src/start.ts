@@ -38,7 +38,6 @@ async function init() {
     const { env } = store
     if (env === null)
       return
-    await connectMongodb()
     const bot = new Bot<MyContext>(env.bot_token)
     store.bot = bot
     store.bot.api.config.use(autoRetry())

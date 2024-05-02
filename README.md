@@ -1,16 +1,15 @@
-# grammY-bot-template
-
-A boilerplate template that applies the GrammY framework to help you get started with the Telegram bot.
-
+# mc-tg-bot
+Minecraft Server Status telegram bot. 
 ## Features
 
-* Structured & modularized code practice
-* TypeScript & ESLint 
-* Mongodb(Mongoose&Typegoose) support
+* Get player count, online players, server version, and name
+* Get latency to server (ping from bot to server)
 
 ## Startup
 
-Rename `.env.example` to `.env`, replace values of `BOT_TOKEN` and `USER_CHAT_ID`  to yours.
+Rename `.env.example` to `.env`, replace values of `BOT_TOKEN` and `USER_CHAT_ID`  to yours(If you are willing to use this bot in a group, you need to get your group chatid first).
+
+Additionally, you can preset your MC server address as `MC_SERVER_ADDRESS` in `.env` file.(You can set the address later by calling `/setting`)
 
 ### How to create a Telegram chatbot yourself?
 
@@ -29,14 +28,7 @@ Add [Bot Father](https://telegram.me/BotFather) to your contact, use `/newbot` c
 
 * `/start` Welcome text
 * `/help` Show help text
-* `/settings` Open settings
-* `/wallpaper` Get a random wallpaper from Unsplash(need to fill in access token in .env file under root directory)
-
-> To enable the `/wallpaper` command, you need to apply a [unsplah api key](https://unsplash.com/documentation) and insert it into `.env`
-
+* `/mc` Show MC server status 
+* `/setting` Set MC server address 
 * `/about` Show information about the bot
 
-## Thanks to
-
-<https://github.com/grammyjs/grammY>
-<https://github.com/ShoroukAziz/notion-potion>
