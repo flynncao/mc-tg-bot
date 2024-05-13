@@ -7,7 +7,6 @@ export default function initLocalEnv(): boolean {
     store.env = {
       bot_token: process.env.BOT_TOKEN!,
       user_chat_id: process.env.USER_CHAT_ID!,
-      unsplash_access_key: process.env.UNSPLASH_ACCESS_KEY!,
       MCServerAddress: process.env.MC_SERVER_ADDRESS!,
     }
     return true

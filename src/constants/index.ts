@@ -3,7 +3,6 @@ import type { MyContext } from '#root/types/bot.js'
 import type Command from '#root/types/commands.js'
 import store from '#root/databases/store.js'
 import Logger from '#root/utils/logger.js'
-import unsplash from '#root/modules/unsplash.js'
 import { showMCServerStatus } from '#root/modules/mc.js'
 
 export const commandList: Command[] = [
@@ -54,7 +53,7 @@ export const commandList: Command[] = [
     description: 'Show Minecraft server status',
     handler: async (ctx: MyContext) => {
       await ctx.reply('✨ Checking Minecraft server status...')
-      showMCServerStatus()
+      showMCServerStatus(ctx)
     },
   },
 

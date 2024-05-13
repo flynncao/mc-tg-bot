@@ -1,9 +1,9 @@
 {
-  "name": "telegram-bot-template",
+  "name": "mc-tg-bot",
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "GrammY bot starter template",
+  "description": "",
   "author": "Flynn Cao",
   "license": "MIT",
   "main": "./dist/start.js",

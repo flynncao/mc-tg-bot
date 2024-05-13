@@ -41,7 +41,6 @@ async function init() {
     const bot = new Bot<MyContext>(env.bot_token)
     store.bot = bot
     store.bot.api.config.use(autoRetry())
-    // Register handlers and menus...
     registerMiddlewares()
     createAllConversations()
     await createAllMenus()
@@ -49,7 +48,6 @@ async function init() {
     registerMessageHandler()
     setErrorHandler(bot)
     initCrons()
-    // Start bot
     bot.start()
     Logger.logSuccess('Bot started')
   }
